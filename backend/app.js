@@ -5,8 +5,15 @@ const cookieParser = require("cookie-parser");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 
+// config
+if (process.env.NODE_ENV !== "PRODUCTION") {
+  require("dotenv").config({
+    path: "config/.env",
+  });
+}
+
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: process.env.URL_client,
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization', 'Access-Control-Allow-Credentials'], // Bao gồm 'Access-Control-Allow-Credentials' trong danh sách tiêu đề cho phép
   credentials: true // Cho phép gửi cookie qua CORS
@@ -21,12 +28,7 @@ app.use("/test", (req, res) => {
 
 app.use(bodyParser.urlencoded({ extended: true, limit: "50mb" }));
 
-// config
-if (process.env.NODE_ENV !== "PRODUCTION") {
-  require("dotenv").config({
-    path: "config/.env",
-  });
-}
+
 
 // import routes
 const user = require("./controller/user");

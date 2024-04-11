@@ -25,20 +25,20 @@ router.post(
         } else {
           images = req.body.images;
         }
-      
+
         const imagesLinks = [];
-      
+
         for (let i = 0; i < images.length; i++) {
           const result = await cloudinary.v2.uploader.upload(images[i], {
             folder: "products",
           });
-      
+
           imagesLinks.push({
             public_id: result.public_id,
             url: result.secure_url,
           });
         }
-      
+
         const productData = req.body;
         productData.images = imagesLinks;
         productData.shop = shop;
@@ -80,19 +80,17 @@ router.delete(
   catchAsyncErrors(async (req, res, next) => {
     try {
       const product = await Product.findById(req.params.id);
-
+      console.log(1);
       if (!product) {
         return next(new ErrorHandler("Product is not found with this id", 404));
-      }    
+      }
 
       for (let i = 0; 1 < product.images.length; i++) {
         const result = await cloudinary.v2.uploader.destroy(
           product.images[i].public_id
         );
       }
-    
-      await product.remove();
-
+      await Product.findByIdAndDelete(req.params.id);
       res.status(201).json({
         success: true,
         message: "Product Deleted successfully!",

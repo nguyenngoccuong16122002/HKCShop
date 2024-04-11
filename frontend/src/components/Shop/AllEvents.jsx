@@ -20,6 +20,7 @@ const AllEvents = () => {
   }, [dispatch]);
 
   const handleDelete = (id) => {
+    console.log(id)
     dispatch(deleteEvent(id));
     window.location.reload();
   }

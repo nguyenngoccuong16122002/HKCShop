@@ -1,5 +1,5 @@
 import axios from "axios";
-import { server } from "../../server";
+import { server } from "../../url";
 
 // create product
 export const createProduct =
@@ -14,35 +14,35 @@ export const createProduct =
     shopId,
     images
   ) =>
-  async (dispatch) => {
-    try {
-      dispatch({
-        type: "productCreateRequest",
-      });
+    async (dispatch) => {
+      try {
+        dispatch({
+          type: "productCreateRequest",
+        });
 
-      const { data } = await axios.post(
-        `${server}/product/create-product`,
-        name,
-        description,
-        category,
-        tags,
-        originalPrice,
-        discountPrice,
-        stock,
-        shopId,
-        images,
-      );
-      dispatch({
-        type: "productCreateSuccess",
-        payload: data.product,
-      });
-    } catch (error) {
-      dispatch({
-        type: "productCreateFail",
-        payload: error.response.data.message,
-      });
-    }
-  };
+        const { data } = await axios.post(
+          `${server}/product/create-product`,
+          name,
+          description,
+          category,
+          tags,
+          originalPrice,
+          discountPrice,
+          stock,
+          shopId,
+          images,
+        );
+        dispatch({
+          type: "productCreateSuccess",
+          payload: data.product,
+        });
+      } catch (error) {
+        dispatch({
+          type: "productCreateFail",
+          payload: error.response.data.message,
+        });
+      }
+    };
 
 // get All Products of a shop
 export const getAllProductsShop = (id) => async (dispatch) => {

@@ -1,5 +1,5 @@
 import axios from "axios";
-import { server } from "../../server";
+import { server } from "../../url";
 
 // get all sellers --- admin
 export const getAllSellers = () => async (dispatch) => {
@@ -19,7 +19,7 @@ export const getAllSellers = () => async (dispatch) => {
   } catch (error) {
     dispatch({
       type: "getAllSellerFailed",
-    //   payload: error.response.data.message,
+      //   payload: error.response.data.message,
     });
   }
 };

@@ -12,7 +12,7 @@ import {
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 import { useSelector } from "react-redux";
 import axios from "axios";
-import { server } from "../../server";
+import { server } from "../../url";
 import { toast } from "react-toastify";
 import { RxCross1 } from "react-icons/rx";
 

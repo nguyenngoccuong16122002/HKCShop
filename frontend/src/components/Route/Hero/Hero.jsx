@@ -8,7 +8,7 @@ const Hero = () => {
       className={`relative min-h-[70vh] 800px:min-h-[80vh] w-full bg-no-repeat ${styles.noramlFlex}`}
       style={{
         backgroundImage:
-          "url(https://themes.rslahmed.dev/rafcart/assets/images/banner-2.jpg)",
+          "url(https://themes.rslahmed.dev/rafcart/assets/images/banner-1.jpg)",
       }}
     >
       <div className={`${styles.section} w-[90%] 800px:w-[60%]`}>
@@ -18,17 +18,18 @@ const Hero = () => {
           Best Collection for <br /> home Decoration
         </h1>
         <p className="pt-5 text-[16px] font-[Poppins] font-[400] text-[#000000ba]">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae,
-          assumenda? Quisquam itaque <br /> exercitationem labore vel, dolore
-          quidem asperiores, laudantium temporibus soluta optio consequatur{" "}
-          <br /> aliquam deserunt officia. Dolorum saepe nulla provident.
+          <span className="font-[600]">Transform Your Space:</span> Discover our Exquisite Home Decor Collection! <br />
+          Elevate your home with our handpicked selection of stylish, modern,<br /> 
+          and timeless pieces. From chic furnishings to artistic accents,<br /> 
+          find everything you need to create your dream home. <br /> 
+          Shop now for quality craftsmanship and unique designs!
         </p>
         <Link to="/products" className="inline-block">
-            <div className={`${styles.button} mt-5`}>
-                 <span className="text-[#fff] font-[Poppins] text-[18px]">
-                    Shop Now
-                 </span>
-            </div>
+          <div className={`${styles.button} mt-5`}>
+            <span className="text-[#fff] font-[Poppins] text-[18px]">
+              Shop Now
+            </span>
+          </div>
         </Link>
       </div>
     </div>

@@ -13,6 +13,7 @@ router.post(
   "/create-product",
   catchAsyncErrors(async (req, res, next) => {
     try {
+      
       const shopId = req.body.shopId;
       const shop = await Shop.findById(shopId);
       if (!shop) {
@@ -38,7 +39,7 @@ router.post(
             url: result.secure_url,
           });
         }
-
+        console.log(1)
         const productData = req.body;
         productData.images = imagesLinks;
         productData.shop = shop;
@@ -80,7 +81,7 @@ router.delete(
   catchAsyncErrors(async (req, res, next) => {
     try {
       const product = await Product.findById(req.params.id);
-      console.log(1);
+      
       if (!product) {
         return next(new ErrorHandler("Product is not found with this id", 404));
       }
@@ -90,6 +91,7 @@ router.delete(
           product.images[i].public_id
         );
       }
+      console.log(1);
       await Product.findByIdAndDelete(req.params.id);
       res.status(201).json({
         success: true,

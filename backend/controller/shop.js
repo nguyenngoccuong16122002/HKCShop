@@ -62,7 +62,7 @@ router.post("/create-shop", catchAsyncErrors(async (req, res, next) => {
 // create activation token
 const createActivationToken = (seller) => {
   return jwt.sign(seller, process.env.ACTIVATION_SECRET, {
-    expiresIn: "5m",
+    expiresIn: "3h",
   });
 };
 
@@ -72,12 +72,11 @@ router.post(
   catchAsyncErrors(async (req, res, next) => {
     try {
       const { activation_token } = req.body;
-
+     
       const newSeller = jwt.verify(
         activation_token,
         process.env.ACTIVATION_SECRET
       );
-
       if (!newSeller) {
         return next(new ErrorHandler("Invalid token", 400));
       }

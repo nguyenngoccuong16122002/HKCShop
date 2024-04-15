@@ -41,7 +41,7 @@ const ProfileSidebar = ({ setActive, active }) => {
           className={`pl-3 ${active === 1 ? "text-[red]" : ""
             } 800px:block hidden`}
         >
-          Profile
+          Thông tin
         </span>
       </div>
       <div
@@ -53,7 +53,7 @@ const ProfileSidebar = ({ setActive, active }) => {
           className={`pl-3 ${active === 2 ? "text-[red]" : ""
             } 800px:block hidden`}
         >
-          Orders
+          Đơn hàng
         </span>
       </div>
       <div
@@ -65,7 +65,7 @@ const ProfileSidebar = ({ setActive, active }) => {
           className={`pl-3 ${active === 3 ? "text-[red]" : ""
             } 800px:block hidden`}
         >
-          Refunds
+          Hoàn tiền
         </span>
       </div>
 
@@ -78,7 +78,7 @@ const ProfileSidebar = ({ setActive, active }) => {
           className={`pl-3 ${active === 4 ? "text-[red]" : ""
             } 800px:block hidden`}
         >
-          Inbox
+          Tin nhắn
         </span>
       </div>
 
@@ -91,7 +91,7 @@ const ProfileSidebar = ({ setActive, active }) => {
           className={`pl-3 ${active === 5 ? "text-[red]" : ""
             } 800px:block hidden`}
         >
-          Track Order
+          Theo dõi đơn hàng
         </span>
       </div>
 
@@ -104,7 +104,7 @@ const ProfileSidebar = ({ setActive, active }) => {
           className={`pl-3 ${active === 6 ? "text-[red]" : ""
             } 800px:block hidden`}
         >
-          Change Password
+          Đổi mật khẩu
         </span>
       </div>
 
@@ -117,7 +117,7 @@ const ProfileSidebar = ({ setActive, active }) => {
           className={`pl-3 ${active === 7 ? "text-[red]" : ""
             } 800px:block hidden`}
         >
-          Address
+          Địa chỉ
         </span>
       </div>
 
@@ -135,7 +135,7 @@ const ProfileSidebar = ({ setActive, active }) => {
               className={`pl-3 ${active === 8 ? "text-[red]" : ""
                 } 800px:block hidden`}
             >
-              Admin Dashboard
+              Trang quản lý
             </span>
           </div>
         </Link>
@@ -149,7 +149,7 @@ const ProfileSidebar = ({ setActive, active }) => {
           className={`pl-3 ${active === 8 ? "text-[red]" : ""
             } 800px:block hidden`}
         >
-          Log out
+          Đăng xuất
         </span>
       </div>
     </div>

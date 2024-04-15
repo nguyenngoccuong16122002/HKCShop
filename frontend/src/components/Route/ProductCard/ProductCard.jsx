@@ -48,14 +48,14 @@ const ProductCard = ({ data,isEvent }) => {
   const addToCartHandler = (id) => {
     const isItemExists = cart && cart.find((i) => i._id === id);
     if (isItemExists) {
-      toast.error("Item already in cart!");
+      toast.error("Sản phẩm đã có trong giỏ!");
     } else {
       if (data.stock < 1) {
-        toast.error("Product stock limited!");
+        toast.error("Số lượng Kho giới hạn!");
       } else {
         const cartData = { ...data, qty: 1 };
         dispatch(addTocart(cartData));
-        toast.success("Item added to cart successfully!");
+        toast.success("Thêm sản phẩm vào giỏ thành công!");
       }
     }
   };
@@ -96,7 +96,7 @@ const ProductCard = ({ data,isEvent }) => {
               </h4>
             </div>
             <span className="font-[400] text-[17px] text-[#68d284]">
-              {data?.sold_out} sold
+              {data?.sold_out} đã bán
             </span>
           </div>
         </Link>
@@ -109,7 +109,7 @@ const ProductCard = ({ data,isEvent }) => {
               className="cursor-pointer absolute right-2 top-5"
               onClick={() => removeFromWishlistHandler(data)}
               color={click ? "red" : "#333"}
-              title="Remove from wishlist"
+              title="Bỏ khỏi danh sách yêu thích"
             />
           ) : (
             <AiOutlineHeart
@@ -117,7 +117,7 @@ const ProductCard = ({ data,isEvent }) => {
               className="cursor-pointer absolute right-2 top-5"
               onClick={() => addToWishlistHandler(data)}
               color={click ? "red" : "#333"}
-              title="Add to wishlist"
+              title="Thêm vào danh sách yêu thích"
             />
           )}
           <AiOutlineEye
@@ -125,14 +125,14 @@ const ProductCard = ({ data,isEvent }) => {
             className="cursor-pointer absolute right-2 top-14"
             onClick={() => setOpen(!open)}
             color="#333"
-            title="Quick view"
+            title="Xem nhanh"
           />
           <AiOutlineShoppingCart
             size={25}
             className="cursor-pointer absolute right-2 top-24"
             onClick={() => addToCartHandler(data._id)}
             color="#444"
-            title="Add to cart"
+            title="Thêm vào giỏ hàng"
           />
           {open ? <ProductDetailsCard setOpen={setOpen} data={data} /> : null}
         </div>

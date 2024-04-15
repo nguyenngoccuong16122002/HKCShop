@@ -36,7 +36,7 @@ const Faq = () => {
             onClick={() => toggleTab(2)}
           >
             <span className="text-lg font-medium text-gray-900">
-              What is your return policy?
+              Chính sách hoàn trả?
             </span>
             {activeTab === 2 ? (
               <svg
@@ -71,10 +71,11 @@ const Faq = () => {
           {activeTab === 2 && (
             <div className="mt-4">
               <p className="text-base text-gray-500">
-                If you're not satisfied with your purchase, we accept returns
-                within 30 days of delivery. To initiate a return, please email
-                us at support@myecommercestore.com with your order number and a
-                brief explanation of why you're returning the item.
+                Nếu bạn không hài lòng với giao dịch mua hàng của mình, chúng
+                tôi chấp nhận trả lại trong vòng 30 ngày kể từ ngày giao hàng.
+                Để bắt đầu trả hàng, vui lòng gửi email chúng tôi tại
+                support@hkce-commerce.com với số đơn đặt hàng của bạn và giải
+                thích ngắn gọn lý do tại sao bạn trả lại hàng.
               </p>
             </div>
           )}
@@ -86,7 +87,7 @@ const Faq = () => {
             onClick={() => toggleTab(3)}
           >
             <span className="text-lg font-medium text-gray-900">
-              How do I track my order?
+              Nguyễn Ngọc Cường đến từ đâu?
             </span>
             {activeTab === 3 ? (
               <svg
@@ -121,9 +122,7 @@ const Faq = () => {
           {activeTab === 3 && (
             <div className="mt-4">
               <p className="text-base text-gray-500">
-                You can track your order by clicking the tracking link in your
-                shipping confirmation email, or by logging into your account on
-                our website and viewing the order details.
+                Đó là một bí ẩn đang được khám phá
               </p>
             </div>
           )}
@@ -135,7 +134,7 @@ const Faq = () => {
             onClick={() => toggleTab(4)}
           >
             <span className="text-lg font-medium text-gray-900">
-              How do I contact customer support?
+              Phó Đức Huy đến từ đâu?
             </span>
             {activeTab === 4 ? (
               <svg
@@ -170,9 +169,7 @@ const Faq = () => {
           {activeTab === 4 && (
             <div className="mt-4">
               <p className="text-base text-gray-500">
-                You can contact our customer support team by emailing us at
-                support@myecommercestore.com, or by calling us at (555) 123-4567
-                between the hours of 9am and 5pm EST, Monday through Friday.
+                THVL1
               </p>
             </div>
           )}
@@ -184,7 +181,7 @@ const Faq = () => {
             onClick={() => toggleTab(5)}
           >
             <span className="text-lg font-medium text-gray-900">
-              Can I change or cancel my order?
+              Tôi có thể hủy đơn hàng không?
             </span>
             {activeTab === 5 ? (
               <svg
@@ -219,10 +216,7 @@ const Faq = () => {
           {activeTab === 5 && (
             <div className="mt-4">
               <p className="text-base text-gray-500">
-                Unfortunately, once an order has been placed, we are not able to
-                make changes or cancellations. If you no longer want the items
-                you've ordered, you can return them for a refund within 30 days
-                of delivery.
+                Bạn có thể hủy đơn hàng trong thời gian Shop chưa xác nhận đơn.
               </p>
             </div>
           )}
@@ -234,7 +228,7 @@ const Faq = () => {
             onClick={() => toggleTab(6)}
           >
             <span className="text-lg font-medium text-gray-900">
-              Do you offer international shipping?
+              Có bao nhiêu hình thức thanh toán?
             </span>
             {activeTab === 6 ? (
               <svg
@@ -269,7 +263,7 @@ const Faq = () => {
           {activeTab === 6 && (
             <div className="mt-4">
               <p className="text-base text-gray-500">
-                Currently, we only offer shipping within the United States.
+                Hiện tại bạn có thể thanh toán bằng thẻ debit / credit, Paypal và COD.
               </p>
             </div>
           )}
@@ -281,7 +275,7 @@ const Faq = () => {
             onClick={() => toggleTab(7)}
           >
             <span className="text-lg font-medium text-gray-900">
-              What payment methods do you accept?
+              Công Khang là ai?
             </span>
             {activeTab === 7 ? (
               <svg
@@ -316,8 +310,7 @@ const Faq = () => {
           {activeTab === 7 && (
             <div className="mt-4">
               <p className="text-base text-gray-500">
-                We accept visa,mastercard,paypal payment method also we have
-                cash on delivery system.
+                Hỏi rất hay.
               </p>
             </div>
           )}

@@ -312,7 +312,7 @@ const MessageList = ({
         <h1 className="text-[18px]">{user?.name}</h1>
         <p className="text-[16px] text-[#000c]">
           {!isLoading && data?.lastMessageId !== user?._id
-            ? "You:"
+            ? "Bạn:"
             : user?.name.split(" ")[0] + ": "}{" "}
           {data?.lastMessage}
         </p>
@@ -419,7 +419,7 @@ const SellerInbox = ({
           <input
             type="text"
             required
-            placeholder="Enter your message..."
+            placeholder="Nhập tin nhắn của bạn..."
             value={newMessage}
             onChange={(e) => setNewMessage(e.target.value)}
             className={`${styles.input}`}

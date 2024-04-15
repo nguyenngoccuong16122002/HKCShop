@@ -24,7 +24,7 @@ const DashboardSideBar = ({ active }) => {
               active === 1 ? "text-[crimson]" : "text-[#555]"
             }`}
           >
-            Dashboard
+            Trang quản lý
           </h5>
         </Link>
       </div>
@@ -40,7 +40,7 @@ const DashboardSideBar = ({ active }) => {
               active === 2 ? "text-[crimson]" : "text-[#555]"
             }`}
           >
-            All Orders
+            Đơn hàng
           </h5>
         </Link>
       </div>
@@ -53,7 +53,7 @@ const DashboardSideBar = ({ active }) => {
               active === 3 ? "text-[crimson]" : "text-[#555]"
             }`}
           >
-            All Products
+            Tất cả Sản phẩm
           </h5>
         </Link>
       </div>
@@ -72,7 +72,7 @@ const DashboardSideBar = ({ active }) => {
               active === 4 ? "text-[crimson]" : "text-[#555]"
             }`}
           >
-            Create Product
+            Thêm sản phẩm
           </h5>
         </Link>
       </div>
@@ -88,7 +88,7 @@ const DashboardSideBar = ({ active }) => {
               active === 5 ? "text-[crimson]" : "text-[#555]"
             }`}
           >
-            All Events
+            Chương trình Hot
           </h5>
         </Link>
       </div>
@@ -104,7 +104,7 @@ const DashboardSideBar = ({ active }) => {
               active === 6 ? "text-[crimson]" : "text-[#555]"
             }`}
           >
-            Create Event
+            Tạo sự kiện
           </h5>
         </Link>
       </div>
@@ -123,7 +123,7 @@ const DashboardSideBar = ({ active }) => {
               active === 7 ? "text-[crimson]" : "text-[#555]"
             }`}
           >
-            Withdraw Money
+            Rút tiền
           </h5>
         </Link>
       </div>
@@ -139,7 +139,7 @@ const DashboardSideBar = ({ active }) => {
               active === 8 ? "text-[crimson]" : "text-[#555]"
             }`}
           >
-            Shop Inbox
+            Tin nhắn Khách Hàng
           </h5>
         </Link>
       </div>
@@ -155,7 +155,7 @@ const DashboardSideBar = ({ active }) => {
               active === 9 ? "text-[crimson]" : "text-[#555]"
             }`}
           >
-            Discount Codes
+            Mã giảm giá
           </h5>
         </Link>
       </div>
@@ -171,7 +171,7 @@ const DashboardSideBar = ({ active }) => {
               active === 10 ? "text-[crimson]" : "text-[#555]"
             }`}
           >
-            Refunds
+            Hoàn tiền
           </h5>
         </Link>
       </div>
@@ -187,7 +187,7 @@ const DashboardSideBar = ({ active }) => {
               active === 11 ? "text-[crimson]" : "text-[#555]"
             }`}
           >
-            Settings
+            Cài đặt
           </h5>
         </Link>
       </div>

@@ -28,42 +28,42 @@ const AllWithdraw = () => {
   }, []);
 
   const columns = [
-    { field: "id", headerName: "Withdraw Id", minWidth: 150, flex: 0.7 },
+    { field: "id", headerName: "Mã rút tiền", minWidth: 150, flex: 0.7 },
     {
       field: "name",
-      headerName: "Shop Name",
+      headerName: "Tên Shop",
       minWidth: 180,
       flex: 1.4,
     },
     {
       field: "shopId",
-      headerName: "Shop Id",
+      headerName: "Mã Shop",
       minWidth: 180,
       flex: 1.4,
     },
     {
       field: "amount",
-      headerName: "Amount",
+      headerName: "Số tiền rút",
       minWidth: 100,
       flex: 0.6,
     },
     {
       field: "status",
-      headerName: "status",
+      headerName: "Trạng thái",
       type: "text",
       minWidth: 80,
       flex: 0.5,
     },
     {
       field: "createdAt",
-      headerName: "Request given at",
+      headerName: "Yêu cầu lúc",
       type: "number",
       minWidth: 130,
       flex: 0.6,
     },
     {
       field: " ",
-      headerName: "Update Status",
+      headerName: "Cập nhật trạng thái",
       type: "number",
       minWidth: 130,
       flex: 0.6,
@@ -123,7 +123,7 @@ const AllWithdraw = () => {
               <RxCross1 size={25} onClick={() => setOpen(false)} />
             </div>
             <h1 className="text-[25px] text-center font-Poppins">
-              Update Withdraw status
+              Cập nhật trạng thái Rút tiền
             </h1>
             <br />
             <select
@@ -140,7 +140,7 @@ const AllWithdraw = () => {
               className={`block ${styles.button} text-white !h-[42px] mt-4 text-[18px]`}
               onClick={handleSubmit}
             >
-              Update
+              Cập nhật
             </button>
           </div>
         </div>

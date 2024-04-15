@@ -82,13 +82,13 @@ const CreateProduct = () => {
 
   return (
     <div className="w-[90%] 800px:w-[50%] bg-white  shadow h-[80vh] rounded-[4px] p-3 overflow-y-scroll">
-      <h5 className="text-[30px] font-Poppins text-center">Create Product</h5>
+      <h5 className="text-[30px] font-Poppins text-center">Thêm Sản Phẩm</h5>
       {/* create product form */}
       <form onSubmit={handleSubmit}>
         <br />
         <div>
           <label className="pb-2">
-            Name <span className="text-red-500">*</span>
+            Tên sản phẩm <span className="text-red-500">*</span>
           </label>
           <input
             type="text"
@@ -96,13 +96,13 @@ const CreateProduct = () => {
             value={name}
             className="mt-2 appearance-none block w-full px-3 h-[35px] border border-gray-300 rounded-[3px] placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
             onChange={(e) => setName(e.target.value)}
-            placeholder="Enter your product name..."
+            placeholder="Nhập tên sản phẩm..."
           />
         </div>
         <br />
         <div>
           <label className="pb-2">
-            Description <span className="text-red-500">*</span>
+            Mô tả <span className="text-red-500">*</span>
           </label>
           <textarea
             cols="30"
@@ -113,20 +113,20 @@ const CreateProduct = () => {
             value={description}
             className="mt-2 appearance-none block w-full pt-2 px-3 border border-gray-300 rounded-[3px] placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
             onChange={(e) => setDescription(e.target.value)}
-            placeholder="Enter your product description..."
+            placeholder="Nhập mô tả..."
           ></textarea>
         </div>
         <br />
         <div>
           <label className="pb-2">
-            Category <span className="text-red-500">*</span>
+            Loại sản phẩm <span className="text-red-500">*</span>
           </label>
           <select
             className="w-full mt-2 border h-[35px] rounded-[5px]"
             value={category}
             onChange={(e) => setCategory(e.target.value)}
           >
-            <option value="Choose a category">Choose a category</option>
+            <option value="Choose a category">Chọn một loại sản phẩm</option>
             {categoriesData &&
               categoriesData.map((i) => (
                 <option value={i.title} key={i.title}>
@@ -144,25 +144,25 @@ const CreateProduct = () => {
             value={tags}
             className="mt-2 appearance-none block w-full px-3 h-[35px] border border-gray-300 rounded-[3px] placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
             onChange={(e) => setTags(e.target.value)}
-            placeholder="Enter your product tags..."
+            placeholder="Nhập tag..."
           />
         </div>
         <br />
         <div>
-          <label className="pb-2">Original Price</label>
+          <label className="pb-2">Giá niêm yết</label>
           <input
             type="number"
             name="price"
             value={originalPrice}
             className="mt-2 appearance-none block w-full px-3 h-[35px] border border-gray-300 rounded-[3px] placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
             onChange={(e) => setOriginalPrice(e.target.value)}
-            placeholder="Enter your product price..."
+            placeholder="Nhập giá niêm yết..."
           />
         </div>
         <br />
         <div>
           <label className="pb-2">
-            Price (With Discount) <span className="text-red-500">*</span>
+            Giá (Đã giảm) <span className="text-red-500">*</span>
           </label>
           <input
             type="number"
@@ -170,13 +170,13 @@ const CreateProduct = () => {
             value={discountPrice}
             className="mt-2 appearance-none block w-full px-3 h-[35px] border border-gray-300 rounded-[3px] placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
             onChange={(e) => setDiscountPrice(e.target.value)}
-            placeholder="Enter your product price with discount..."
+            placeholder="Nhập giá khuyến mãi..."
           />
         </div>
         <br />
         <div>
           <label className="pb-2">
-            Product Stock <span className="text-red-500">*</span>
+            Kho sản phẩm <span className="text-red-500">*</span>
           </label>
           <input
             type="number"
@@ -184,13 +184,13 @@ const CreateProduct = () => {
             value={stock}
             className="mt-2 appearance-none block w-full px-3 h-[35px] border border-gray-300 rounded-[3px] placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
             onChange={(e) => setStock(e.target.value)}
-            placeholder="Enter your product stock..."
+            placeholder="Nhập số lượng trong kho..."
           />
         </div>
         <br />
         <div>
           <label className="pb-2">
-            Upload Images <span className="text-red-500">*</span>
+            Hình ảnh sản phẩm <span className="text-red-500">*</span>
           </label>
           <input
             type="file"
@@ -218,7 +218,7 @@ const CreateProduct = () => {
           <div>
             <input
               type="submit"
-              value="Create"
+              value="Thêm"
               className="mt-2 cursor-pointer appearance-none text-center block w-full px-3 h-[35px] border border-gray-300 rounded-[3px] placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
             />
           </div>

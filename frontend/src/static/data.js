@@ -1,23 +1,23 @@
 // navigation Data
 export const navItems = [
     {
-      title: "Home",
+      title: "Trang chủ",
       url: "/",
     },
     {
-      title: "Best Selling",
+      title: "Bán chạy",
       url: "/best-selling",
     },
     {
-      title: "Products",
+      title: "Sản phẩm",
       url: "/products",
     },
     {
-      title: "Events",
+      title: "Sự kiện",
       url: "/events",
     },
     {
-      title: "FAQ",
+      title: "Câu hỏi thường gặp",
       url: "/faq",
     },
   ];
@@ -26,8 +26,8 @@ export const navItems = [
   export const brandingData = [
     {
       id: 1,
-      title: "Free Shipping",
-      Description: "From all orders over 100$",
+      title: "Miễn phí vận chuyển",
+      Description: "Cho các đơn hàng từ 20$ trở lên",
       icon: (
         <svg
           width="36"
@@ -76,8 +76,8 @@ export const navItems = [
     },
     {
       id: 2,
-      title: "Daily Surprise Offers",
-      Description: "Save up to 25% off",
+      title: "Ưu đãi bất ngờ mỗi ngày",
+      Description: "Giảm giá đến 50%",
       icon: (
         <svg
           width="32"
@@ -104,8 +104,8 @@ export const navItems = [
     },
     {
       id: 4,
-      title: "Affortable Prices",
-      Description: "Get Factory direct price",
+      title: "Giá cả phải chăng",
+      Description: "Giá sàn thấp nhất từ các Shop",
       icon: (
         <svg
           width="32"
@@ -151,8 +151,8 @@ export const navItems = [
     },
     {
       id: 5,
-      title: "Secure Payments",
-      Description: "100% protected payments",
+      title: "Thanh toán an toàn",
+      Description: "Bảo toàn tuyệt đối thông tin khách hàng",
       icon: (
         <svg
           width="32"
@@ -191,69 +191,69 @@ export const navItems = [
   export const categoriesData = [
     {
       id: 1,
-      title: "Computers and Laptops",
+      title: "PC và Laptop",
       subTitle: "",
       image_Url:
         "https://cdn.shopify.com/s/files/1/1706/9177/products/NEWAppleMacbookProwithM1ProChip14InchLaptop2021ModelMKGQ3LL_A_16GB_1TBSSD_custommacbd.jpg?v=1659592838",
     },
     {
       id: 2,
-      title: "cosmetics and body care",
+      title: "Mỹ phẩm",
       subTitle: "",
       image_Url:
         "https://indian-retailer.s3.ap-south-1.amazonaws.com/s3fs-public/2021-07/kosme1.png",
     },
     {
       id: 3,
-      title: "Accesories",
+      title: "Phụ kiện",
       subTitle: "",
       image_Url:
         "https://img.freepik.com/free-vector/ordering-goods-online-internet-store-online-shopping-niche-e-commerce-website-mother-buying-babies-clothes-footwear-toys-infant-accessories_335657-2345.jpg?w=2000",
     },
     {
       id: 4,
-      title: "Cloths",
+      title: "Quần áo",
       subTitle: "",
       image_Url:
         "https://www.shift4shop.com/2015/images/industries/clothing/clothing-apparel.png",
     },
     {
       id: 5,
-      title: "Shoes",
+      title: "Giày dép",
       subTitle: "",
       image_Url:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvBQPQMVNRd6TtDkGs2dCri0Y-rxKkFOiEWw&usqp=CAU",
     },
     {
       id: 6,
-      title: "Gifts",
+      title: "Quà",
       subTitle: "",
       image_Url:
         "https://res.cloudinary.com/den7zpqp4/image/upload/v1712776209/g0blahf5fknkqkiuydc4.jpg",
     },
     {
       id: 7,
-      title: "Pet Care",
+      title: "Mặt hàng cho thú cưng",
       subTitle: "",
       image_Url: "https://res.cloudinary.com/den7zpqp4/image/upload/v1712775779/uwi62mwkddho0a0dfq12.png",
     },
     {
       id: 8,
-      title: "Mobile and Tablets",
+      title: "Điện thoại và Máy tính bảng",
       subTitle: "",
       image_Url:
         "https://st-troy.mncdn.com/mnresize/1500/1500/Content/media/ProductImg/original/mpwp3tua-apple-iphone-14-256gb-mavi-mpwp3tua-637986832343472449.jpg",
     },
     {
       id: 9,
-      title: "Music and Gaming",
+      title: "Thiết bị cho giải trí",
       subTitle: "",
       image_Url:
         "https://static.vecteezy.com/system/resources/previews/011/996/555/original/3d-black-headphone-illustration-ecommerce-icon-png.png",
     },
     {
       id: 10,
-      title: "Others",
+      title: "Mặt hàng khác",
       subTitle: "",
       image_Url:
         "https://searchspring.com/wp-content/uploads/2022/10/Hero-Image-Platform-Others-2.png",
@@ -593,21 +593,21 @@ export const navItems = [
   
   export const footerProductLinks = [
     {
-      name: "About us",
+      name: "Về chúng tôi",
       link: "/about"
     },
     {
-      name: "Careers",
+      name: "Công việc",
       link: "/carrers"
     },
     {
-      name: "Store Locations",
+      name: "Địa chỉ cửa hàng",
     },
     {
-      name: "Our Blog",
+      name: "Bài viết",
     },
     {
-      name: "Reviews",
+      name: "Đánh giá",
     },
   ];
   
@@ -616,34 +616,34 @@ export const navItems = [
       name: "Game & Video",
     },
     {
-      name: "Phone &Tablets",
+      name: "Smartphones & Tablets",
     },
     {
-      name: "Computers & Laptop",
+      name: "PC & Laptop",
     },
     {
-      name: "Sport Watches",
+      name: "Đồng hồ thể thao",
     },
     {
-      name: "Events",
+      name: "Sự kiện",
     },
   ];
   
   export const footerSupportLinks = [
     {
-      name: "FAQ",
+      name: "Câu hỏi thường gặp",
     },
     {
-      name: "Reviews",
+      name: "Đánh giá",
     },
     {
-      name: "Contact Us",
+      name: "Liên hệ chúng tôi",
     },
     {
       name: "Shipping",
     },
     {
-      name: "Live chat",
+      name: "Chat trực tiếp",
     },
   ];
   

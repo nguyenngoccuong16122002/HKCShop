@@ -21,29 +21,29 @@ const TrackOrder = () => {
       {" "}
       <>
         {data && data?.status === "Processing" ? (
-          <h1 className="text-[20px]">Your Order is processing in shop.</h1>
+          <h1 className="text-[20px]">Đơn hàng của bạn đang được xử lý.</h1>
         ) : data?.status === "Transferred to delivery partner" ? (
           <h1 className="text-[20px]">
-            Your Order is on the way for delivery partner.
+            Đơn hàng của bạn đang chờ đơn vị vận chuyển.
           </h1>
         ) : data?.status === "Shipping" ? (
           <h1 className="text-[20px]">
-            Your Order is on the way with our delivery partner.
+            Đơn hàng của bạn đã được gửi đến đơn vị vận chuyển.
           </h1>
         ) : data?.status === "Received" ? (
           <h1 className="text-[20px]">
-            Your Order is in your city. Our Delivery man will deliver it.
+            Đơn hàng của bạn đã đến thành phố. Shipper sẽ nhanh chóng vận chuyển đến bạn.
           </h1>
         ) : data?.status === "On the way" ? (
           <h1 className="text-[20px]">
-            Our Delivery man is going to deliver your order.
+            Shipper đang trên đường giao hàng.
           </h1>
         ) : data?.status === "Delivered" ? (
-          <h1 className="text-[20px]">Your order is delivered!</h1>
+          <h1 className="text-[20px]">Đơn hàng đã vận chuyển thành công!</h1>
         ) : data?.status === "Processing refund" ? (
-          <h1 className="text-[20px]">Your refund is processing!</h1>
+          <h1 className="text-[20px]">Hoàn trả đang được xử lý!</h1>
         ) : data?.status === "Refund Success" ? (
-          <h1 className="text-[20px]">Your Refund is success!</h1>
+          <h1 className="text-[20px]">Hoàn trả thành công!</h1>
         ) : null}
       </>
     </div>

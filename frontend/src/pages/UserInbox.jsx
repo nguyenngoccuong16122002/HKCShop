@@ -212,7 +212,7 @@ const UserInbox = () => {
         <>
           <Header />
           <h1 className="text-center text-[30px] py-3 font-Poppins">
-            All Messages
+            Tất cả thông báo
           </h1>
           {/* All messages list */}
           {conversations &&
@@ -314,7 +314,7 @@ const MessageList = ({
         <h1 className="text-[18px]">{user?.name}</h1>
         <p className="text-[16px] text-[#000c]">
           {!loading && data?.lastMessageId !== userData?._id
-            ? "You:"
+            ? "Bạn:"
             : userData?.name.split(" ")[0] + ": "}{" "}
           {data?.lastMessage}
         </p>
@@ -347,7 +347,7 @@ const SellerInbox = ({
           />
           <div className="pl-3">
             <h1 className="text-[18px] font-[600]">{userData?.name}</h1>
-            <h1>{activeStatus ? "Active Now" : ""}</h1>
+            <h1>{activeStatus ? "Kích hoạt ngay" : ""}</h1>
           </div>
         </div>
         <AiOutlineArrowRight
@@ -419,7 +419,7 @@ const SellerInbox = ({
           <input
             type="text"
             required
-            placeholder="Enter your message..."
+            placeholder="Nhập tin nhắn..."
             value={newMessage}
             onChange={(e) => setNewMessage(e.target.value)}
             className={`${styles.input}`}

@@ -36,7 +36,7 @@ const Faq = () => {
             onClick={() => toggleTab(2)}
           >
             <span className="text-lg font-medium text-gray-900">
-              What is your return policy?
+              Chính sách hoàn trả của bạn là gì?
             </span>
             {activeTab === 2 ? (
               <svg
@@ -71,10 +71,10 @@ const Faq = () => {
           {activeTab === 2 && (
             <div className="mt-4">
               <p className="text-base text-gray-500">
-                If you're not satisfied with your purchase, we accept returns
-                within 30 days of delivery. To initiate a return, please email
-                us at support@myecommercestore.com with your order number and a
-                brief explanation of why you're returning the item.
+                Nếu bạn không hài lòng với sản phẩm, chúng tôi đồng ý hoàn trả
+                trong vòng 30 ngày kể từ ngày vận chuyển. Để tạo đơn hoàn trả, xin
+                hãy gửi email đến địa chỉ support@myecommercestore.com cùng với mã 
+                đơn đặt hàng và giải thích ngắn gọn về lý do bạn hoàn trả sản phẩm.
               </p>
             </div>
           )}
@@ -86,7 +86,7 @@ const Faq = () => {
             onClick={() => toggleTab(3)}
           >
             <span className="text-lg font-medium text-gray-900">
-              How do I track my order?
+              Làm thế nào để theo dõi đơn hàng của tôi?
             </span>
             {activeTab === 3 ? (
               <svg
@@ -121,9 +121,9 @@ const Faq = () => {
           {activeTab === 3 && (
             <div className="mt-4">
               <p className="text-base text-gray-500">
-                You can track your order by clicking the tracking link in your
-                shipping confirmation email, or by logging into your account on
-                our website and viewing the order details.
+                Bạn có thể theo dõi đơn hàng bằng cách nhấp vào liên kết theo dõi 
+                trong email xác nhận vận chuyển, hoạc bằng cách đăng nhập vào tài 
+                khoản của bạn trên trang web của chúng tôi và xem chi tiết đơn hàng.
               </p>
             </div>
           )}
@@ -135,7 +135,7 @@ const Faq = () => {
             onClick={() => toggleTab(4)}
           >
             <span className="text-lg font-medium text-gray-900">
-              How do I contact customer support?
+              Làm cách nào để liên hệ với bộ phận hỗ trợ khách hàng?
             </span>
             {activeTab === 4 ? (
               <svg
@@ -170,9 +170,9 @@ const Faq = () => {
           {activeTab === 4 && (
             <div className="mt-4">
               <p className="text-base text-gray-500">
-                You can contact our customer support team by emailing us at
-                support@myecommercestore.com, or by calling us at (555) 123-4567
-                between the hours of 9am and 5pm EST, Monday through Friday.
+                Bạn có thể liên hệ với đội ngũ hỗ trợ khách hàng của chúng tôi bằng cách gửi 
+                email theo địa chỉ support@myecommercestore.com hoặc gọi cho chúng tôi theo số 
+                (555) 123-4567 trong khoảng thời gian từ 9 giờ sáng đến 5 giờ chiều từ thứ hai đến thứ sáu.
               </p>
             </div>
           )}
@@ -184,7 +184,7 @@ const Faq = () => {
             onClick={() => toggleTab(5)}
           >
             <span className="text-lg font-medium text-gray-900">
-              Can I change or cancel my order?
+              Tôi có thể thay đổi hoặc hủy đơn hàng của mình không?
             </span>
             {activeTab === 5 ? (
               <svg
@@ -219,10 +219,9 @@ const Faq = () => {
           {activeTab === 5 && (
             <div className="mt-4">
               <p className="text-base text-gray-500">
-                Unfortunately, once an order has been placed, we are not able to
-                make changes or cancellations. If you no longer want the items
-                you've ordered, you can return them for a refund within 30 days
-                of delivery.
+                Chúng tôi rất tiếc, một khi đơn hàng đã được đặt, chúng tôi không thể
+                thực hiện thay đổi hoặc hủy bỏ. Nếu bạn không còn muốn mua sản phẩm nữa,
+                bạn có thể trả lại để được hoàn tiền trong vòng 30 ngày kể từ ngày giao hàng.
               </p>
             </div>
           )}
@@ -234,7 +233,7 @@ const Faq = () => {
             onClick={() => toggleTab(6)}
           >
             <span className="text-lg font-medium text-gray-900">
-              Do you offer international shipping?
+              Bạn có vận chuyển quốc tế không?
             </span>
             {activeTab === 6 ? (
               <svg
@@ -269,7 +268,7 @@ const Faq = () => {
           {activeTab === 6 && (
             <div className="mt-4">
               <p className="text-base text-gray-500">
-                Currently, we only offer shipping within the United States.
+                Hiện tại chúng tôi chỉ cung cấp dịch vụ vận chuyển trong nước.
               </p>
             </div>
           )}
@@ -281,7 +280,7 @@ const Faq = () => {
             onClick={() => toggleTab(7)}
           >
             <span className="text-lg font-medium text-gray-900">
-              What payment methods do you accept?
+              Tôi có thể thanh toán bằng các phương thức nào?
             </span>
             {activeTab === 7 ? (
               <svg
@@ -316,8 +315,8 @@ const Faq = () => {
           {activeTab === 7 && (
             <div className="mt-4">
               <p className="text-base text-gray-500">
-                We accept visa,mastercard,paypal payment method also we have
-                cash on delivery system.
+                Chúng tôi chấp nhận thanh toán bằng visa, mastercard, paypal. Ngoài ra bạn cũng có thể
+                thanh toán khi nhận hàng.
               </p>
             </div>
           )}

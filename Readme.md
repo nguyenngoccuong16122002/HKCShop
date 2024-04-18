@@ -9,7 +9,7 @@
 * Chuyên ngành: Công Nghệ Phần Mềm
 * Sở thích: Cắm trại, nghe nhạc, du lịch
 ---------------------------------------------------------------------------
-![avatar](https://github.com/nguyenngoccuong16122002/HKCShop/issues/1#issue-2251014661)
+![avatar](https://github.com/nguyenngoccuong16122002/HKCShop/assets/127472090/25a87972-6d1a-4bce-ba6f-91e40551e22c)
 # Thông tin cá nhân
 * Họ Tên: Phó Đức Huy
 * MSSV: 2011060374

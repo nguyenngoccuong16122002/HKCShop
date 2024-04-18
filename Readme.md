@@ -4,7 +4,18 @@
 * Họ Tên: Nguyễn Ngọc Cường
 * MSSV: 2011064795
 * Lớp: 20DTHB5
-* Năm học: 2020-204
-* khoa : Công nghệ thông tin
-* chuyên ngành: Công Nghệ phần Mềm
-* sở thích: Cắm trại , nghe nhạc , du lịch
+* Năm học: 2020-2024
+* Khoa : Công Nghệ Thông Tin
+* Chuyên ngành: Công Nghệ Phần Mềm
+* Sở thích: Cắm trại, nghe nhạc, du lịch
+---------------------------------------------------------------------------
+![avatar](https://github.com/nguyenngoccuong16122002/HKCShop/issues/1#issue-2251014661)
+# Thông tin cá nhân
+* Họ Tên: Phó Đức Huy
+* MSSV: 2011060374
+* Lớp: 20DTHB5
+* Năm học: 2020-2024
+* Khoa : Công Nghệ Thông Tin
+* Chuyên ngành: Công Nghệ Phần Mềm
+* Sở thích: Ca hát, du lịch, chơi thể thao
+---------------------------------------------------------------------------

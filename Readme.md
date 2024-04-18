@@ -18,3 +18,14 @@
 * Chuyên ngành: Công Nghệ Phần Mềm
 * Sở thích: Ca hát, du lịch, chơi thể thao
 ---------------------------------------------------------------------------
+![trung](https://github.com/nguyenngoccuong16122002/HKCShop/issues/3#issue-2251059689)
+
+# Thông tin cá nhân
+* Họ Tên: Nguyễn Tấn Trung
+* MSSV: 2011068762
+* Lớp: 20DTHB5
+* Năm học: 2020-2024
+* Khoa : Công Nghệ Thông Tin
+* Chuyên ngành: Công Nghệ Phần Mềm
+* Sở thích: Chơi game, ca hát, đi ca phê
+---------------------------------------------------------------------------

@@ -7,7 +7,7 @@ import { server } from "../url";
 const ActivationPage = () => {
   const { activation_token } = useParams();
   const [error, setError] = useState(false);
-
+//test
   useEffect(() => {
     if (activation_token) {
       const sendRequest = async () => {

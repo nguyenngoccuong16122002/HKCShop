@@ -40,5 +40,5 @@
 * Năm học: 2020-2024
 * Khoa : Công Nghệ Thông Tin
 * Chuyên ngành: Công Nghệ Phần Mềm
-* Sở thích: Đọc sách, xem phim, thể thao
+* Sở thích: Đọc sách, Xem phim, Thể thao
 * Nhiệm vụ trong dự án: Socket chat realtime, Thiết kế giao diện, thiết kế dữ liệu
